@@ -1,0 +1,93 @@
+<!doctype html>
+<html ⚡ lang="pr-br">
+<head>
+  <meta charset="utf-8">
+  <title>amp-audio</title>
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <!-- ## Setup -->
+  <!--
+    Import the `amp-audio` component.
+  -->
+  <script async custom-element="amp-audio" src="https://cdn.ampproject.org/v0/amp-audio-0.1.js"></script>
+  <!--<link rel="canonical" href="https://amp.dev/documentation/examples/components/amp-audio/index.html"> -->
+  <meta name="viewport" content="width=device-width">
+  <style amp-boilerplate>
+    body {
+      -webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
+      -moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
+      -ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
+      animation:-amp-start 8s steps(1,end) 0s 1 normal both
+    }
+    @-webkit-keyframes -amp-start {
+      from {
+        visibility:hidden
+      }
+      to {
+        visibility:visible
+      }
+    }
+    @-moz-keyframes -amp-start {
+      from {
+        visibility:hidden
+      }
+      to {
+        visibility:visible
+      }
+    }
+    @-ms-keyframes -amp-start {
+      from {
+        visibility:hidden
+      }
+      to {
+        visibility:visible
+      }
+    }
+    @-o-keyframes -amp-start {
+      from {
+        visibility:hidden
+      }
+      to {
+        visibility:visible
+      }
+    }
+    @keyframes -amp-start {
+      from {
+        visibility:hidden
+      }
+      to {
+        visibility:visible
+      }
+    }
+  </style>
+  <noscript>
+    <style amp-boilerplate>
+      body {
+        -webkit-animation:none;
+        -moz-animation:none;
+        -ms-animation:none;
+        animation:none
+      }
+    </style>
+  </noscript>
+</head>
+
+<body>
+
+<!-- ## Disabling controls -->
+<!--
+Audio controls are added by default and are the same as [controlsList](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/controlsList) attribute of HTML5 video element.
+For example, you can use them to disable the download button.
+-->
+
+  <amp-audio
+          width="auto"
+          height="50"
+          src="https://ia801402.us.archive.org/16/items/EDIS-SRP-0197-06/EDIS-SRP-0197-06.mp3"
+          controlslist="nodownload">
+    <div fallback>
+      Your browser doesn’t support HTML5 audio
+    </div>
+  </amp-audio>
+
+</body>
+</html>
